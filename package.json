@@ -21,6 +21,7 @@
   "devDependencies": {
     "babel-core": "^6.1.19",
     "babel-loader": "^6.1.0",
+    "babel-preset-react": "^6.1.18",
     "webpack": "^1.12.2"
   }
 }
