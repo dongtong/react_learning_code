@@ -1,5 +1,7 @@
-# react_learning_code
-Implement http://facebook.github.io/react/ tutorial
+# React with Webpack
+
+- http://facebook.github.io/react/ tutorial
+- https://fakefish.github.io/react-webpack-cookbook/Optimizing-rebundling.html
 
 
 
