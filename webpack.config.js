@@ -4,6 +4,27 @@ var node_modules = path.resolve(__dirname, 'node_modules');
 //var pathToMinReact = path.resolve(node_modules, 'react/dist/react.min.js');
 
 var config =  {
+	//---------------
+	// entry: {
+	//     app: path.resolve(__dirname, 'app/main.js'),
+	//     mobile: path.resolve(__dirname, 'app/mobile.js'),
+	//     vendors: ['react'] // 其他库
+	// },
+	// output: {
+	//     path: path.resolve(__dirname, 'dist'),
+	//     filename: '[name].js' // 注意我们使用了变量
+	// },
+	//---------------
+	// entry: {
+	//     app: path.resolve(__dirname, 'app/main.js'),
+
+	//     // Since react is installed as a node module, node_modules/react,
+	//     // we can point to it directly, just like require('react');
+	//     // 当 React 作为一个 node 模块安装的时候，
+	//     // 我们可以直接指向它，就比如 require('react')
+	//     vendors: ['react']
+	// }
+	//---------------
 	entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'src/javascripts/main.js')],
 	// resolve: {
 	// 	alias: {
@@ -40,6 +61,9 @@ var config =  {
 			loader: 'url?limit=100000'
 		}]
 	}
+	// plugins: [
+	//     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
+	// ]
 }
 
 module.exports =  config;
