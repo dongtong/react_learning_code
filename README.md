@@ -6,6 +6,7 @@
 		-ProjectName
 		|-----------build
 		|-----------src
+		             |--------a.html, b.html, ...
 		             |--------javascripts
 		                          |--------main.js
 		                          |--------components
