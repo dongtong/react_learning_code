@@ -10,8 +10,7 @@
 		                          |--------main.js
 		                          |--------components
 		                                      |-----ComponentA
-		                                      	          |----css
-		                                      			|----A.css
+		                                      	          |----css(A.css, xx.css)
 		                                                  |----A.jsx
 		                                      |-----ComponentB
 
