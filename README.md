@@ -54,9 +54,9 @@ Webpack 引入 Flow 之后会非常方便。
 
 你可以根据这个策略为每个组件创建 CSS 文件，可以让组件名和 CSS 中的 class 使用一个命名空间，来避免一个组件中的一些 class 干扰到另外一些组件的 class。
 
-.MyComponent-wrapper {
-  background-color: #EEE;
-}
+	.MyComponent-wrapper {
+	  background-color: #EEE;
+	}
 
 --------------------------------------------------------------------------------------------------
 
@@ -66,21 +66,21 @@ Webpack 引入 Flow 之后会非常方便。
 
 在 “React Native” 中你不再需要使用任何 CSS 文件，你只需要使用 style 属性，可以把你的 CSS 定义成一个对象，那样就可以根据你的项目重新来考略你的 CSS 策略。
 
-import React from 'react';
-
-var style = {
-  backgroundColor: '#EEE'
-};
-
-export default React.createClass({
-  render: function () {
-    return (
-      <div style={style}>
-        <h1>Hello world</h1>
-      </div>
-    )
-  }
-});
+	import React from 'react';
+	
+	var style = {
+	  backgroundColor: '#EEE'
+	};
+	
+	export default React.createClass({
+	  render: function () {
+	    return (
+	      <div style={style}>
+	        <h1>Hello world</h1>
+	      </div>
+	    )
+	  }
+	});
 
 --------------------------------------------------------------------------------------------------
 
@@ -135,14 +135,14 @@ Webpack 也可以实现懒加载入口文件，意味着应用的一部分只在
 1. 你有一个相对比较大的应用，可以让用户可以访问应用的不同部分
 2. 你非常关注初始渲染时间
 
-openProfile() {
-    require.ensure([], () => {
-      var Profile = require('./Profile.js');
-      this.setState({
-        currentComponent: Profile
-      });
-    });
-}
+	openProfile() {
+	    require.ensure([], () => {
+	      var Profile = require('./Profile.js');
+	      this.setState({
+	        currentComponent: Profile
+	      });
+	    });
+	}
 
 第一个数组参数是什么？：如果你尝试去懒加载一段由另一个懒加载的代码加载的代码的话，把它作为依赖写在数组里，就把路径写进去，比如 ['./FunnyButton.js']
 
